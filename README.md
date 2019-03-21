@@ -36,7 +36,7 @@ $ git clone https://github.com/colxi/whisp.git
 ```
 ...or download the latest Release in a `.zip` package [here](https://github.com/colxi/whisp/releases/latest)
 
-#About the `Group Key`
+# Security & `Group Key`
 
 The usage of a `Group key` in the Client connection stage, adds another layer of security (on top of SSL used by Httpsand WSS). When setted, lets you to create **private and encrypted Groups** only accessible for those who are using the same `Group Key`. The provided key is used to encrypt (`AES encryption`) all the traffic betwen Group members (including text, audio and images).
 > The longest is the used key the more secure will be the envroent
