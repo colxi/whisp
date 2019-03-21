@@ -1,0 +1,60 @@
+
+#chat-modal-recording{
+    width: 100%;
+    background: var(--primary-color);
+    z-index: 1000;
+    position: absolute;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#chat-modal-recording-button{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 100%;
+    background: var(--primary-color-dark);
+    color: var(--primary-color-light);
+    text-align:center;
+    display : block;
+    position:relative;
+    cursor: pointer;
+    border: 15px solid var( --primary-color-dark);
+    background-image: url(../img/mic.png);
+    background-size: contain;
+    transition : background 1s, border 1s;
+}
+#chat-modal-recording-button:hover{
+    background-color : var(--primary-color-light);
+    border: 15px solid var( --primary-color-light);
+    color: var(--primary-color-dark);
+}
+
+#chat-modal-recording-button:before{
+    animation: recorderAnimation 2s infinite;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color-dark);
+    border-radius: 100%;
+    z-index: -1; 
+    position: relative;
+    pointer-events: none;
+}
+
+
+@keyframes recorderAnimation {
+    0%{
+        opacity:.8;
+    }
+    100%{ 
+        opacity: 0; 
+        transform: scale(5);
+    }
+}

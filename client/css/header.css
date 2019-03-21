@@ -1,0 +1,95 @@
+
+#chat-header{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background: var(--primary-color);
+    box-shadow: inset 0px -11px 14px 0px #00000014;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    padding: 20px;
+}
+
+#chat-header-logo{
+    width: 50px;
+    align-self: center;
+}
+
+#chat-header-back{
+    width: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#chat-header-logo img{
+	width: 100%;
+}
+
+#chat-header-user{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    align-self: center;
+}
+
+#chat-header-user-avatar{
+    width: 50px;
+    height: 50px;
+    background: var( --primary-color-light );
+    color: var( --primary-color );
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+#chat-header-user-avatar:after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: var( --primary-color );
+    content: ' ';
+    border-radius: 10px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    border: 2px solid #90c4f1;
+}
+
+#chat-header-user-avatar[data-status="true"]:after {
+	width: 10px;
+    height: 10px;
+    display: block;
+    background: var( --status-color-active );
+    content: ' ';
+    border-radius: 10px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    border: 2px solid #90c4f1;
+}
+
+#chat-header-user-avatar[data-status="false"]:after{
+	width: 10px;
+    height: 10px;
+    display: block;
+    background: var( --status-color-inactive );
+    content: ' ';
+    border-radius: 10px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    border: 2px solid #90c4f1;
+}
+
+#chat-header-user-data{
+    place-self: center;
+    width: 100%;
+}
+
+#chat-header-user-nick{
+    font-weight: bold;
+    padding-right: 10px;
+}

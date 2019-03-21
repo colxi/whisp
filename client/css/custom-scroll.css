@@ -1,0 +1,19 @@
+
+[custom-scroll]{ overflow-y: hidden !important;}
+[custom-scroll]:hover{ 
+	overflow-y: auto !important; /* support firefox */
+	overflow-y: overlay !important;
+}
+
+[custom-scroll]::-webkit-scrollbar{ 
+	display:block; 
+	width:12px;
+}
+[custom-scroll]::-webkit-scrollbar-button{  display: none; }
+[custom-scroll]::-webkit-scrollbar-track{  display: none; }
+
+[custom-scroll]::-webkit-scrollbar-thumb{  
+	background-color: var( --primary-color); 
+	border: 4px solid transparent;
+    background-clip: padding-box;
+}

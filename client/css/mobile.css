@@ -1,0 +1,29 @@
+
+body[data-mobile-device] .chat-message-entry-body{
+    padding: 10px 20px;
+}
+
+body[data-mobile-device] .chat-message-entry-time{
+    margin-top:0px;
+}
+
+body[data-mobile-device] .chat-info-entry{
+    padding-bottom: 10px;
+}
+
+body[data-mobile-device] .chat-message-entry-body[data-message-type="text"] {
+    max-width: 100%;
+}
+
+body[data-mobile-device] .chat-message-entry-avatar{
+    display: none;
+}
+
+body[data-mobile-device] [custom-scroll] {
+    overflow-y: auto !important;
+    overflow-y: overlay !important;
+}
+
+body[data-mobile-device] .chat-message-entry-media{
+    margin-top: 10px;
+}

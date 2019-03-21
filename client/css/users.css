@@ -1,0 +1,67 @@
+
+#chat-users{
+    grid-column: 2;
+    grid-row: 2;
+    background: var(--secondary-color);
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.chat-users-user{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 1fr 20px;
+    padding: 20px 40px;
+}
+
+
+.chat-users-user[data-self=true]{
+	background: var( --secondary-color-dark );
+}
+
+.chat-users-user[data-status="false"]{ opacity: .5; }
+
+.chat-users-user-avatar {
+    width: 50px;
+    height: 50px;
+    background: var( --primary-color );
+	
+	color: var( --primary-color-light );
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chat-users-user-data {
+    margin-left: 20px;
+    color: var( --secondary-color-darker );
+}
+
+.chat-users-user-state {
+    margin-top: 5px;
+}
+.chat-users-user-state:empty{ display: none; } 
+
+.chat-users-user-nick {
+    font-weight: bold;
+}
+
+.chat-users-user-statusicon{
+    background: #80bc5a;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.chat-users-user[data-status="true"] .chat-users-user-statusicon{
+	background: var( --status-color-active );
+}
+
+.chat-users-user[data-status="false"] .chat-users-user-statusicon{
+	background: var( --status-color-inactive );
+}
+
+
+

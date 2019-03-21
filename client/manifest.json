@@ -1,0 +1,22 @@
+{
+    "short_name": "Whisp",
+    "name": "Whisp - Private Messaging",
+    "description": "The app that helps you find the best food in town!",
+    "icons": [
+        {
+            "src":"/img/logo-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src":"/img/logo-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#509de1",
+    "theme_color": "#509de1",
+    "display": "standalone",
+    "orientation" : "portrait-primary"
+}

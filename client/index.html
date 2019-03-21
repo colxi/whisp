@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Whisp - Secure Messaging</title>
+    <link rel="stylesheet" href="./css/_main.css">
+    <script src="./js/_main.js" defer="true" type='module'></script>
+    <!-- PWA -->
+    <meta name="theme-color" content="#509de1" />
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <!-- Notifications Overlay-->
+    <div id="app-notification">Loading...</div>
+    <!-- Recorder Overlay -->
+    <div id="chat-modal-recording" hidden>
+        <div id="chat-modal-recording-button"></div>
+        <span>Click to stop</span>
+    </div>
+    <!-- Login Dialog -->
+    <div id="login-container" hidden>
+        <div id="login-container-form" >
+		<img id="login-logo" src="./img/logo.png">
+            <div>
+                <input id="nick" type="text" maxlength="16" placeholder="Nickname" autocomplete="off" />
+            </div>
+            <div id="login-container-form-server-group">
+                <input id="login-server-host" type="text" placeholder="Host" autocomplete="off"/>
+                <input id="login-server-port" type="number" maxlength="7" placeholder="Port" autocomplete="off" />
+            </div>
+            <div>
+                <input id="key" type="text" placeholder="Group Key" autocomplete="off" />
+            </div>
+            <div id="login-container-submit">Enter</div>
+        </div>
+    </div>
+    <!-- Chat Body -->
+    <div id="chat-body">
+        <!-- Chat Header -->
+        <div id="chat-header">
+            <div id="chat-header-back" hidden>&lt;</div>
+			<div id="chat-header-logo"><img src="./img/logo.png"></div>
+            <div id="chat-header-user">
+                <div id="chat-header-user-data">
+                    <div id="chat-header-user-nick"></div>
+                </div>
+                <div id="chat-header-user-avatar" data-status="true"></div>
+            </div>
+        </div>
+        <!-- Chat Container -->
+        <div id="chat-container">
+            <!-- Chat Messages -->
+            <div id="chat-messages-container" custom-scroll></div>
+            <!-- Chat Input -->
+            <div id="chat-input-container">
+                <div id="chat-view-users"></div>
+                <input id="chat-message-input" type="text" autocomplete="off" />
+                <div id="chat-message-record"></div>
+                <div id="chat-message-file">
+                    <input id="chat-message-file-input" type="file" accept="image/*" hidden>
+                    <label for="chat-message-file-input">+</label>
+                </div>
+            </div>
+        </div>
+        <!-- Chat Users List -->
+        <div id="chat-users" custom-scroll></div>
+    </div>
+</body>
+</html>
