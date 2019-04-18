@@ -1,7 +1,7 @@
 # Whisp chat
 Modern Chat App with encrypted private groups and rich messages support, based in Node (chat Server) and HTML Progressive Web Application ( chat Client)
 
-You can [test it online here](http://whisp.tk).
+You can [test it online here](https://whisp.colxi.info).
 
 **Characteristics & features :**
 - Private Encrypted Groups (AES encryption)
